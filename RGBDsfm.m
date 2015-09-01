@@ -122,7 +122,7 @@ minAcceptableSIFT = 25;
 
 cntLoopEdge = 0;
 for pairID=1:length(MatchPairsLoop)
-    if size(MatchPairsLoop{pairID}.matches,2)>minAcceptableSIFT
+    if size(MatchPairsLoop{pairID}.matches,2)>minAcceptableSIFT   % 如果Match pair大於25就被視為好loop edge
         cntLoopEdge = cntLoopEdge+1;
     end
 end
